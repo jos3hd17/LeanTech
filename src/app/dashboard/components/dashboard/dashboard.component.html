@@ -1,0 +1,20 @@
+<div class="frame">
+    <div class="row header">
+        <div class="col-2">
+            <img src="../../../../assets/img/icons/logo.png" alt="" width="100px" height="100px" class="image-tile">
+        </div>
+        <div class="col">
+            <app-header></app-header>
+        </div>
+    </div>
+    <div class="row adjust">
+        <div class="col-2">
+            <div class="row right-line">
+                <router-outlet name="sidebar" class="sidebar"></router-outlet>
+            </div>
+        </div>
+        <div class="col-10 contain">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
