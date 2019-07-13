@@ -13,6 +13,11 @@ import { SidebarMessagesComponent } from './components/sidebar/sidebar-messages/
 import { SidebarAccountComponent } from './components/sidebar/sidebar-account/sidebar-account.component';
 import { SidebarSettingsComponent } from './components/sidebar/sidebar-settings/sidebar-settings.component';
 import { StructureModule } from '../structure/structure.module';
+import { StoreModule } from '@ngrx/store';
+import * as fromState from './state/reducers';
+import { EffectsModule } from '@ngrx/effects';
+import { HomeEffects } from './state/effects/home.effects';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [DashboardComponent,
@@ -29,7 +34,9 @@ import { StructureModule } from '../structure/structure.module';
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    StructureModule
+    StructureModule,
+    StoreModule.forFeature('services', fromState.reducers),
+    EffectsModule.forFeature( [HomeEffects] )
   ]
 })
 export class DashboardModule { }

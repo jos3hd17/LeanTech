@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { TableComponent } from './components/table/table.component';
 import { ItemTableComponent } from './components/item-table/item-table.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [HeaderComponent, TableComponent, ItemTableComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    MatIconModule
   ],
   exports: [
     HeaderComponent,

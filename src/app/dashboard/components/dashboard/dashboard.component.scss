@@ -16,13 +16,19 @@
         height: 85vh;
         padding: 10px;
         border-radius: 5px;
+     
         .right-line{
             border-right: solid 1px;
-            margin-top:20%;
+            margin-top:0%;
             height: 70%;
             .sidebar{
                 width: 100%;
             }
+        }
+        .contain{
+            overflow-y: scroll;
+            overflow-x: hidden;
+            height: 100%;
         }
     }
 }

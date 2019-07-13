@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-item-table',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemTableComponent implements OnInit {
 
+  @Input() item;
   constructor() { }
 
   ngOnInit() {
