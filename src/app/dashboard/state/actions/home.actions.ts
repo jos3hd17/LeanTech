@@ -15,6 +15,6 @@ export const getServicesListSuccess = createAction(
 const servicesAction = union({
     getServicesList,
     getServicesListSuccess
-})
+});
 
 export type ServicesAction = typeof servicesAction;

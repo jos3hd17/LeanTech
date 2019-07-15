@@ -13,7 +13,6 @@ export class ServiceService {
 
   // Sería lo ideal, sin embargo no tengo un API :(
   // path = `${environment.production}/services.json `;
-  
 
   constructor(private http: HttpClient) { }
 

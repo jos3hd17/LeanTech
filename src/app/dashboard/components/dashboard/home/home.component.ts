@@ -14,9 +14,6 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.store.select(getServiceState).subscribe(t => {
       this.table = t.services.services;
-      console.log(t.services.services);
-
-      
     });
   }
 
